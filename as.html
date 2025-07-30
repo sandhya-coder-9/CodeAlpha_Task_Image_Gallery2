@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<di>
+
+  <h1 class="title">🌟 Image Gallery 🌟</h1>
+
+  <!-- Search -->
+  <input type="text" id="searchInput" placeholder="🔍 Search images..." onkeyup="searchImages()" />
+
+  <!-- Filter Buttons -->
+  <div class="filter-btns">
+    <button class="active" onclick="filterImages('all', this)">All</button>
+    <button onclick="filterImages('nature', this)">Nature</button>
+    <button onclick="filterImages('city', this)">City</button>
+    <button onclick="filterImages('animal', this)">Animal</button>
+    <button onclick="filterImages('river', this)">River</button>
+    <button onclick="filterImages('birds', this)">Birds</button>
+    <button onclick="filterImages('Flowers', this)">Flowers</button>
+    <button onclick="filterImages('desert', this)">Desert</button>
+    <button onclick="filterImages('fish', this)">Fish</button>
+    <button onclick="filterImages('tree', this)">Tree</button>
+    <button onclick="filterImages('snake', this)">Snake</button>
+    <button onclick="filterImages('car', this)">Car</button>
+  </div>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <div class="image-card nature">
+      <img src="/b1.jpeg" alt="Green Forest" onclick="openLightbox(this)" />
+      <img src="/b2.jpeg" alt="Green Forest" onclick="openLightbox(this)" />
+      <img src="/b3.jpeg" alt="Green Forest" onclick="openLightbox(this)" />
+      <img src="/b4.jpeg" alt="Green Forest" onclick="openLightbox(this)" />
+      <img src="/b5.jpeg" alt="Green Forest" onclick="openLightbox(this)" />
+    </div>
+    <div class="image-card city">
+      <img src="/c1.jpeg" alt="Urban Skyline" onclick="openLightbox(this)" />
+      <img src="/c2.jpeg" alt="Urban Skyline" onclick="openLightbox(this)" />
+      <img src="/c3.jpeg" alt="Urban Skyline" onclick="openLightbox(this)" />
+      <img src="/c4.jpeg" alt="Urban Skyline" onclick="openLightbox(this)" />
+      <img src="/c5.jpeg" alt="Urban Skyline" onclick="openLightbox(this)" />
+    </div>
+    <div class="image-card animal">
+      <img src="/a1.jpeg" alt="Wild Tiger" onclick="openLightbox(this)" />
+      <img src="/a2.jpeg" alt="Wild Tiger" onclick="openLightbox(this)" />
+      <img src="/a3.jpeg" alt="Wild Tiger" onclick="openLightbox(this)" />
+      <img src="/a4.jpeg" alt="Wild Tiger" onclick="openLightbox(this)" />
+      <img src="/a5.jpeg" alt="Wild Tiger" onclick="openLightbox(this)" />
+    </div>
+    <div class="image-card nature">
+      <img src="/m1.jpeg" alt="Mountain Lake" onclick="openLightbox(this)" />
+      <img src="/m2.jpeg" alt="Mountain Lake" onclick="openLightbox(this)" />
+      <img src="/m3.jpeg" alt="Mountain Lake" onclick="openLightbox(this)" />
+      <img src="/m4.jpeg" alt="Mountain Lake" onclick="openLightbox(this)" />
+      <img src="/m5.jpeg" alt="Mountain Lake" onclick="openLightbox(this)" />
+    </div>
+    <div class="image-card river">
+      <img src="/r1.jpeg" alt="River" onclick="openLightbox(this)" />
+      <img src="/r2.jpeg" alt="River" onclick="openLightbox(this)" />
+      <img src="/r3.jpeg" alt="River" onclick="openLightbox(this)" />
+      <img src="/r4.jpeg" alt="River" onclick="openLightbox(this)" />
+      <img src="/r5.jpeg" alt="River" onclick="openLightbox(this)" />
+  </div>
+   <div class="image-card birds">
+      <img src="/p1.jpeg" alt="Birds" onclick="openLightbox(this)" />
+      <img src="/p2.jpeg" alt="Birds" onclick="openLightbox(this)" />
+      <img src="/p3.jpeg" alt="Birds" onclick="openLightbox(this)" />
+      <img src="/p4.jpeg" alt="Birds" onclick="openLightbox(this)" />
+      <img src="/p5.jpeg" alt="Birds" onclick="openLightbox(this)" />
+  </div>
+   <div class="image-card Flowers">
+      <img src="/f1.jpeg" alt="flowers" onclick="openLightbox(this)" />
+      <img src="/f2.jpeg" alt="flowers" onclick="openLightbox(this)" />
+      <img src="/f3.jpeg" alt="flowers" onclick="openLightbox(this)" />
+      <img src="/f4.jpeg" alt="flowers" onclick="openLightbox(this)" />
+      <img src="/f5.jpeg" alt="flowers" onclick="openLightbox(this)" />
+   </div>
+   <div class="image-card desert">
+      <img src="/d1.jpeg "alt="desert" onclick="openLightbox(this)" />
+      <img src="/d2.jpeg "alt="desert" onclick="openLightbox(this)" />
+      <img src="/d3.jpeg "alt="desert" onclick="openLightbox(this)" />
+      <img src="/d4.jpeg "alt="desert" onclick="openLightbox(this)" />
+      <img src="/d5.jpeg "alt="desert" onclick="openLightbox(this)" />
+   </div>
+   <div class="image-card fish">
+      <img src="/j1.jpeg "alt="fish" onclick="openLightbox(this)" />
+      <img src="/j2.jpeg "alt="fish" onclick="openLightbox(this)" />
+      <img src="/j3.jpeg "alt="fish" onclick="openLightbox(this)" />
+      <img src="/j4.jpeg "alt="fish" onclick="openLightbox(this)" />
+      <img src="/j5.jpeg "alt="fish" onclick="openLightbox(this)" />
+   </div>
+    <div class="image-card tree">
+      <img src="/t1.jpeg "alt="tree" onclick="openLightbox(this)" />
+      <img src="/t2.jpeg "alt="tree" onclick="openLightbox(this)" />
+      <img src="/t3.jpeg "alt="tree" onclick="openLightbox(this)" />
+      <img src="/t4.jpeg "alt="tree" onclick="openLightbox(this)" />
+      <img src="/t5.jpeg "alt="tree" onclick="openLightbox(this)" />
+    </div>
+    <div class="image-card snake">
+      <img src="/s1.jpeg "alt="snake" onclick="openLightbox(this)" />
+      <img src="/s2.jpeg "alt="snake" onclick="openLightbox(this)" />
+      <img src="/s3.jpeg "alt="snake" onclick="openLightbox(this)" />
+      <img src="/s4.jpeg "alt="snake" onclick="openLightbox(this)" />
+      <img src="/s5.jpeg "alt="snake" onclick="openLightbox(this)" />
+     </div>
+    <div class="image-card car">
+      <img src="/g1.jpeg "alt="car" onclick="openLightbox(this)" />
+      <img src="/g2.jpeg "alt="car" onclick="openLightbox(this)" />
+      <img src="/g3.jpeg "alt="car" onclick="openLightbox(this)" />
+      <img src="/g4.jpeg "alt="car" onclick="openLightbox(this)" />
+      <img src="/g5.jpeg "alt="car" onclick="openLightbox(this)" />
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-img" src="" />
+    <div class="nav-btns">
+      <span onclick="prevImage()">&#10094;</span>
+      <span onclick="nextImage()">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
